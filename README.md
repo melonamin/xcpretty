@@ -1,4 +1,6 @@
-# xcpretty in Docker
+# xcpretty in Docker [![Build Status](https://travis-ci.com/melonamin/xcpretty.svg?branch=master)](https://travis-ci.com/melonamin/xcpretty) [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/melonamin/xcpretty/)
+
+Minimal Alpine based Docker image to run `xcpretty` in your shell.
 
 ## Motivation
 
@@ -8,14 +10,13 @@ Have you seen this on macOS?
 ➜  ~ gem install xcpretty
 ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.
-➜  ~
 ```
 
-You don't want to use sudo and you don't want to deal with Ruby environments management? 
+You don't want to use sudo and you don't want to deal with Ruby environment management? 
 
 ## Solution
 
-Get the docker image(Alpine + Ruby, nothing more):
+Get the docker image:
 
 ```shell
 docker pull melonamin/xcpretty
@@ -41,13 +42,14 @@ Run it like this:
     -v, --version                    Show version
 ```
 
-or better download a "shortcut":
+or better download the "shortcut":
 
 ```bash 
 curl -o /usr/local/bin/xcpretty https://raw.githubusercontent.com/melonamin/xcpretty/master/xcpretty
 ```
 
 or create it yourself:
+
 ```bash
 echo "#/bin/bash
 if [ -t 0 ]; then
@@ -57,13 +59,13 @@ else
 fi" > /usr/local/bin/xcpretty
 ```
 
-Don't foreget to set the execution flag:
+Don't forget to set the execution flag:
 
 ```bash
 chmod +x /usr/local/bin/xcpretty
 ```
 
-Now you can use xcpretty like you normal do:
+Now you can use `xcpretty` like you normal do:
 ```bash
 ➜  ~ xcodebuild [flags] | xcpretty
 #
