@@ -1,4 +1,4 @@
-# xcpretty in Docker [![Build Status](https://travis-ci.com/melonamin/xcpretty.svg?branch=master)](https://travis-ci.com/melonamin/xcpretty) [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/melonamin/xcpretty/)
+# xcpretty in Docker [![Build Status](https://travis-ci.com/melonamin/xcpretty.svg?branch=master)](https://travis-ci.com/melonamin/xcpretty) [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/melonamin/xcpretty/) [![](https://images.microbadger.com/badges/image/melonamin/xcpretty.svg)](https://microbadger.com/images/melonamin/xcpretty "Get your own image badge on microbadger.com")
 
 Minimal Alpine based Docker image to run `xcpretty` in your shell.
 
